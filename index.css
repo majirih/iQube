@@ -1,0 +1,238 @@
+@font-face {
+    font-family: productSans;
+    src: url(fonts/Product\ Sans\ Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-size: 20px;
+    font-family: productSans;
+}
+
+#background {
+    position: absolute;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+}
+
+#background-accent {
+    background: linear-gradient(180deg, rgba(242, 201, 76, 0.2) 0%, rgba(242, 153, 74, 0.2) 100%);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 50%;
+    transform: skew(0deg, -15deg);
+}
+
+.container {
+    width: 710px;
+    margin: 0 auto;
+    padding: 180px 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4E598C;
+    margin-bottom: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 24px 0;
+}
+
+#nav {
+    color: #BDBDBD;
+    display: flex;
+}
+
+.active-nav {
+    color: #F2994A;
+}
+
+.active-nav .nav-underline {
+    display: block;
+}
+
+.nav-item {
+    flex: 1;
+    position: relative;
+}
+
+.nav-underline {
+    border-radius: 6px;
+    display: none;
+    background: #F2994A;
+    position: absolute;
+    bottom: -6px;
+    width: 170px;
+    height: 12px;
+}
+
+hr {
+    border-top: 1px solid;
+}
+
+form {
+    margin-top: 80px;
+}
+
+#completed {
+    display: none;
+    background: white;
+    border-radius: 6px;
+    padding: 64px 150px;
+    box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+}
+
+#step1 {
+    display: block;
+}
+
+#step2 {
+    display: none;
+}
+
+#step3 {
+    display: none;
+    background: white;
+    box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+
+label {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+input {
+    font-family: productSans;
+    width: 100%;
+    font-size: 20px;
+    padding: 16px;
+    border: 1px solid #4E598C;
+    border-radius: 10px;
+    color: #4f4f4f;
+    margin-bottom: 44px;
+}
+
+#address-info {
+    color: #817E9E;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+#state-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+#local-government {
+    flex: 2;
+}
+
+#state {
+    flex: 1;
+}
+
+#card-numbers {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    padding: 20px 80px;
+    background-color: #2F80ED;
+}
+
+th:nth-child(2) {
+    text-align: right;
+}
+
+td {
+    padding: 20px 80px;
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+#form-buttons {
+    display: flex;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.action-button {
+    color: white;
+    background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+    flex: 1;
+}
+
+#cancel {
+    flex: 2;
+    background-color: white;
+    color: #4E598C;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 48px;
+}
+
+#message {
+    font-size: 42px;
+}
+
+#message-body {
+    margin: 30px 0;
+    color: #4F4F4F;
+}
+
+.text-button {
+    padding: 0;
+    background-color: transparent;
+    color: #F2C94C;
+    font-weight: normal;
+}
+
