@@ -131,6 +131,18 @@ input {
     margin-bottom: 44px;
 }
 
+select {
+    font-family: productSans;
+    width: 100%;
+    font-size: 20px;
+    padding: 16px;
+    height: 58px;
+    border: 1px solid #4E598C;
+    border-radius: 10px;
+    color: #4f4f4f;
+    margin-bottom: 44px;
+}
+
 #address-info {
     color: #817E9E;
     font-size: 16px;
@@ -155,6 +167,18 @@ input {
     display: flex;
     justify-content: space-between;
     gap: 4%;
+}
+
+#card-details{
+    flex:3;
+}
+
+#expiry-date{
+    flex:1;
+}
+
+#cvv{
+    flex:0.5;
 }
 
 table {

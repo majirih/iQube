@@ -38,7 +38,7 @@
                     <input type="text" name="name" />
                     <label>Email</label>
                     <p id="address-info">The purchase reciept would be sent to this address</p>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" required="true" />
                     <label>Address 1</label>
                     <input type="text" name="address1" />
                     <label>Address 2</label>
@@ -50,27 +50,35 @@
                         </div>
                         <div id="state">
                             <label>State</label>
-                            <input type="text" name="state" />
+                            <select name="state">
+                                <option>Abuja</option>
+                                <option>Lagos</option>
+                                <option>Port-Harcourt</option>
+                            </select>
                         </div>
                     </div>
                 </div>
                 <div id="step2">
                     <label>Name on Card</label>
-                    <input type="text" name="name" />
+                    <input type="text" name="name" required="true" />
                     <label>Card Type</label>
-                    <input type="text" name="card-type" />
+                    <select name="card-type" required="true">
+                        <option>Master Card</option>
+                        <option>Veve</option>
+                        <option>Visa</option>
+                    </select>
                     <div id="card-numbers">
-                        <div>
+                        <div id="card-details">
                             <label>Card Details</label>
-                            <input type="text" name="card-details" />
+                            <input type="text" name="card-details" required="true" />
                         </div>
-                        <div>
+                        <div id="expiry-date">
                             <label>Expiry Date</label>
-                            <input type="text" name="expiry-date" />
+                            <input type="date" name="expiry-date" required="true" />
                         </div>
-                        <div>
+                        <div id="cvv">
                             <label>CVV</label>
-                            <input type="text" name="cvv" />
+                            <input type="text" name="cvv" requiered="true" />
                         </div>
                     </div>
                 </div>
@@ -111,7 +119,7 @@
         </div>
         <div id="completed">
             <div class="icon-container">
-                <img class="icon" src="images/tick.svg"/>
+                <img class="icon" src="images/tick.svg" />
             </div>
             <h1 id="message">Purchase Completed</h1>
             <p id="message-body">
